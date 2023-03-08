@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Sine Wave</title>
+  </head>
+  <body>
+    <form action="">
+      <section>
+        <div>
+          <label for="y">y:</label>
+          <input type="range" name="y" id="y" oninput="updateValues(this)" />
+        </div>
+
+        <div>
+          <label for="amplitude">amplitude:</label>
+          <input
+            type="range"
+            name="amplitude"
+            id="amplitude"
+            oninput="updateValues(this)"
+          />
+        </div>
+
+        <div>
+          <label for="length">length:</label>
+          <input
+            type="range"
+            name="length"
+            id="length"
+            oninput="updateValues(this)"
+          />
+        </div>
+
+        <div>
+          <label for="frequency">frequency:</label>
+          <input
+            type="range"
+            name="frequency"
+            id="frequency"
+            oninput="updateValues(this)"
+          />
+        </div>
+      </section>
+      <section>
+        <div>
+          <label for="hue">hue:</label>
+          <input
+            type="range"
+            name="hue"
+            id="hue"
+            oninput="updateValues(this)"
+          />
+        </div>
+        <div>
+          <label for="saturation">saturation:</label>
+          <input
+            type="range"
+            name="saturation"
+            id="saturation"
+            oninput="updateValues(this)"
+          />
+        </div>
+        <div>
+          <label for="light">light:</label>
+          <input
+            type="range"
+            name="light"
+            id="light"
+            oninput="updateValues(this)"
+          />
+        </div>
+      </section>
+      <section>
+        <div>
+          <label for="red">red:</label>
+          <input
+            type="range"
+            name="red"
+            id="red"
+            oninput="updateValues(this)"
+          />
+        </div>
+        <div>
+          <label for="green">green:</label>
+          <input
+            type="range"
+            name="green"
+            id="green"
+            oninput="updateValues(this)"
+          />
+        </div>
+        <div>
+          <label for="blue">blue:</label>
+          <input
+            type="range"
+            name="blue"
+            id="blue"
+            oninput="updateValues(this)"
+          />
+        </div>
+        <div>
+          <label for="alpha">alpha:</label>
+          <input
+            type="range"
+            name="alpha"
+            id="alpha"
+            oninput="updateValues(this)"
+          />
+        </div>
+      </section>
+    </form>
+    <canvas id="canvas"></canvas>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
