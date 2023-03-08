@@ -22,6 +22,11 @@ let green = 0
 let blue = 0
 let alpha = 0.1
 
+window.addEventListener("resize", () => {
+  canvas.width = window.innerWidth
+  canvas.height = window.innerHeight
+})
+
 const ySlider = document.getElementById('y')
 ySlider.setAttribute('min', '0')
 ySlider.setAttribute('max', `${canvas.height}`)
